@@ -11,26 +11,35 @@ using namespace std;
 class Tickets{
 protected:
     int ticketID;
-    string ticketType;
+    string concertGroup;
     string ticketPrice;
-    string ticketStatus;
+    string timeHour;
     string ticketColor;
+    string ticketStatus;
+    int seat;
+    string person;
 public:
-    Tickets(int ticketID, string ticketType, string ticketPrice, string ticketStatus, string ticketColor);
-    
+    Tickets(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person);
+
     void setTicketID(int ticketID);
-    void setTicketType(string ticketType);
+    void setConcertGroup(string concertGroup);
     void setTicketPrice(string ticketPrice);
-    void setTicketStatus(string ticketStatus);
+    void setTimeHour(string timeHour);
     void setTicketColor(string ticketColor);
+    void setTicketStatus(string ticketStatus);
+    void setSeat(int seat);
+    void setPerson(string person);
 
     int getTicketID() const;
-    string getTicketType() const;
+    string getConcertGroup() const;
     string getTicketPrice() const;
-    string getTicketStatus() const;
+    string getTimeHour() const;
     string getTicketColor() const;
+    string getTicketStatus() const;
+    int getSeat() const;
+    string getPerson() const;
 
-    void print() const;
+    void printTicket() const;
 
     
 

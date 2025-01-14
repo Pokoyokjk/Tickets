@@ -1,53 +1,89 @@
 #include "Tickets.hpp"
-rttt
 
 // this will be used to create a ticket object
-Tickets::Tickets(int ticketID, string ticketType, string ticketPrice, string ticketStatus, string ticketColor) : ticketID(ticketID), ticketType(ticketType), ticketPrice(ticketPrice), ticketStatus(ticketStatus), ticketColor(ticketColor) {
-}
+Tickets::Tickets(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person) :
+    ticketID(ticketID), concertGroup(concertGroup), ticketPrice(ticketPrice), timeHour(timeHour), ticketColor(ticketColor), ticketStatus(ticketStatus), seat(seat), person(person) {
+    }
 
-void Tickets::setTicketID(int ticketID){
+void Tickets::setTicketID(int ticketID) {
     this->ticketID = ticketID;
 }
 
-void Tickets::setTicketType(string ticketType){
-    this->ticketType = ticketType;
+int Tickets::getTicketID() {
+    return ticketID;
 }
 
-void Tickets::setTicketPrice(string ticketPrice){
+void Tickets::setConcertGroup(string concertGroup) {
+    this->concertGroup = concertGroup;
+}
+
+string Tickets::getConcertGroup() {
+    return concertGroup;
+}
+
+void Tickets::setTicketPrice(string ticketPrice) {
     this->ticketPrice = ticketPrice;
 }
 
-void Tickets::setTicketStatus(string ticketStatus){
-    this->ticketStatus = ticketStatus;
+string Tickets::getTicketPrice() {
+    return ticketPrice;
 }
 
-void Tickets::setTicketColor(string ticketColor){
+void Tickets::setTimeHour(string timeHour) {
+    this->timeHour = timeHour;
+}
+
+string Tickets::getTimeHour() {
+    return timeHour;
+}
+
+void Tickets::setTicketColor(string ticketColor) {
     this->ticketColor = ticketColor;
 }
 
-int Tickets::getTicketID() const{
-    return this->ticketID;
+string Tickets::getTicketColor() {
+    return ticketColor;
 }
 
-string Tickets::getTicketType() const{
-    return this->ticketType;
+void Tickets::setTicketStatus(string ticketStatus) {
+    this->ticketStatus = ticketStatus;
 }
 
-string Tickets::getTicketPrice() const{
-    return this->ticketPrice;
+string Tickets::getTicketStatus() {
+    return ticketStatus;
 }
 
-string Tickets::getTicketStatus() const{
-    return this->ticketStatus;
+void Tickets::setSeat(int seat) {
+    this->seat = seat;
 }
 
-string Tickets::getTicketColor() const{
-    return this->ticketColor;
+int Tickets::getSeat() {
+    return seat;
 }
 
-void Tickets::print() const{
-    cout << "Problem! Cannot describe ticket :(" << endl;
+string Tickets::getPerson() {
+    return person;
 }
+
+void Tickets::setPerson(string person) {
+    this->person = person;
+}
+
+void Tickets::printTicket() {
+    cout << "Ticket ID: " << ticketID << endl;
+    cout << "Concert Group: " << concertGroup << endl;
+    cout << "Ticket Price: " << ticketPrice << endl;
+    cout << "Time Hour: " << timeHour << endl;
+    cout << "Ticket Color: " << ticketColor << endl;
+    cout << "Ticket Status: " << ticketStatus << endl;
+    cout << "Seat: " << seat << endl;
+    cout << "Person: " << person << endl;
+}
+
+
+
+
+
 
 
 
