@@ -15,9 +15,12 @@ int main()  {
     cout << "The name of the band is: " << gt1.getConcertGroup() << endl;
     cout << "The ticket includes a seat: " << gt1.getWithSeat() << endl;
     
-    //now lets create another General icket in which we ask inthe command line to set the values
+    //now lets create another General icket in which we ask in the command line to set the values
     cout << "-----------------" << endl;
-    GeneralTicket gt2;
+    GeneralTicket gt2 (0, "", 0, "", "", "", 0, "", false);
     cout << "Please enter the ticket ID: ";
-    cin >> gt2;
+    cin >> gt2.setTicketID;
+    cout << "Please enter the concert group: ";
+    cin >> gt2.setConcertGroup;
+
 }
