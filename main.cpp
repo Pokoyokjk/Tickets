@@ -25,7 +25,7 @@ int main()  {
 
     string concertGroup;
     cout << "Please enter the concert group: ";
-    cin >> concertGroup;
+    getline(cin >> ws, concertGroup);
     gt2.setConcertGroup(concertGroup);
 
     int ticketPrice;
@@ -35,7 +35,7 @@ int main()  {
 
     string timeHour;
     cout << "Please enter the time of the concert: ";
-    cin >> timeHour;
+    getline(cin >> ws, timeHour);
     gt2.setTimeHour(timeHour);
 
     string ticketColor;
@@ -50,7 +50,7 @@ int main()  {
 
     string person;
     cout << "Please enter the tickets's purchaser: ";
-    cin >> person;
+    getline(cin >> ws, person);
     gt2.setPerson(person);
 
     bool withSeat;
