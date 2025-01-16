@@ -19,8 +19,14 @@ int main()  {
     cout << "-----------------" << endl;
     GeneralTicket gt2 (0, "", 0, "", "", "", 0, "", false);
     cout << "Please enter the ticket ID: ";
-    cin >> gt2.setTicketID;
+    int ticketID;
+    cout << "Please enter the ticket ID: ";
+    cin >> ticketID;
+    gt2.setTicketID(ticketID);
+
+    string concertGroup;
     cout << "Please enter the concert group: ";
-    cin >> gt2.setConcertGroup;
+    cin >> concertGroup;
+    gt2.setConcertGroup(concertGroup);
 
 }
