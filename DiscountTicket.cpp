@@ -29,7 +29,7 @@ void DiscountTicket::setIsDiscounted() {
     }
 }
 
-// now I want to override the method setTicketPrice() from the parent class Ticket, if isDiscounted is greater than 0, the ticketPrice will be discounted
+// If isDiscounted is greater than 0, the ticketPrice will be discounted
 // if not, it will be the same as the parent class Ticket
 void DiscountTicket::setTicketPrice() {
     if (isDiscounted > 0) {

@@ -11,7 +11,7 @@ public:
     // Constructor
     GeneralTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat);
 
-    bool getWithSeat() const;
+    bool getWithSeat();
     void setWithSeat(bool withSeat);
 
 };

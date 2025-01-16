@@ -13,11 +13,10 @@ public:
     string getDiscountType();
     void setDiscountType(string discountType);
 
-    bool getIsDiscounted();
+    int getIsDiscounted();
     void setIsDiscounted();
 
-    // override method of  Ticket class setTicketPrice
-    void setTicketPrice() override;
+    void setTicketPrice();
 
 
 };
