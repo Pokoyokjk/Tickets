@@ -15,4 +15,8 @@ bool GeneralTicket::getWithSeat() {
 
 void GeneralTicket::setWithSeat(bool withSeat) {
     this->withSeat = withSeat;
+    if (!withSeat) {
+        this->setSeat(0);
+        cout << "This ticket does not include a seat" << endl;
+    }
 }
