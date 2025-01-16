@@ -2,7 +2,7 @@
 #include "DiscountTicket.hpp"
 
 DiscountTicket::DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person,string discountType, int isDiscounted) : 
-Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person), discountType(discountType), isDiscounted(isDiscounted) {
+Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, ticketStatus, seat, person), discountType(discountType), isDiscounted(isDiscounted) {
 }
 
 string DiscountTicket::getDiscountType() {
