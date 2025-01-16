@@ -9,7 +9,7 @@ class VIPTicket : public Ticket {
     bool foodAndDrink;
 
 public:
-    VIPTicket(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink);
+    VIPTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink);
 
     void setBackStagePass(bool backStagePass);
     void setMeetAndGreet(bool meetAndGreet);

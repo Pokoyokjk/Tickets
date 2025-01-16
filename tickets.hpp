@@ -12,18 +12,18 @@ class Tickets{
 protected:
     int ticketID;
     string concertGroup;
-    string ticketPrice;
+    int ticketPrice;
     string timeHour;
     string ticketColor;
     string ticketStatus;
     int seat;
     string person;
 public:
-    Tickets(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person);
+    Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person);
 
     void setTicketID(int ticketID);
     void setConcertGroup(string concertGroup);
-    void setTicketPrice(string ticketPrice);
+    void setTicketPrice(int ticketPrice);
     void setTimeHour(string timeHour);
     void setTicketColor(string ticketColor);
     void setTicketStatus(string ticketStatus);
@@ -32,7 +32,7 @@ public:
 
     int getTicketID() const;
     string getConcertGroup() const;
-    string getTicketPrice() const;
+    int getTicketPrice() const;
     string getTimeHour() const;
     string getTicketColor() const;
     string getTicketStatus() const;

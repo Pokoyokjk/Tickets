@@ -5,16 +5,20 @@
 
 class DiscountTicket : public Ticket {
     string discountType;
-    bool isDiscounted;
+    int isDiscounted;
 
 public:
-    DiscountTicket(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, string discountType, bool isDiscounted);
+    DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, string discountType, int isDiscounted);
 
     string getDiscountType();
     void setDiscountType(string discountType);
 
     bool getIsDiscounted();
-    void setIsDiscounted(bool isDiscounted);
+    void setIsDiscounted();
+
+    // override method of  Ticket class setTicketPrice
+    void setTicketPrice() override;
+
 
 };
 

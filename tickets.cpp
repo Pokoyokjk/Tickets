@@ -1,7 +1,7 @@
 #include "Tickets.hpp"
 
 // this will be used to create a ticket object
-Tickets::Tickets(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person) :
+Tickets::Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person) :
     ticketID(ticketID), concertGroup(concertGroup), ticketPrice(ticketPrice), timeHour(timeHour), ticketColor(ticketColor), ticketStatus(ticketStatus), seat(seat), person(person) {
     }
 
@@ -21,11 +21,11 @@ string Tickets::getConcertGroup() {
     return concertGroup;
 }
 
-void Tickets::setTicketPrice(string ticketPrice) {
+void Tickets::setTicketPrice(int ticketPrice) {
     this->ticketPrice = ticketPrice;
 }
 
-string Tickets::getTicketPrice() {
+int Tickets::getTicketPrice() {
     return ticketPrice;
 }
 
