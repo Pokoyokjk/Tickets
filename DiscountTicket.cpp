@@ -37,7 +37,6 @@ void DiscountTicket::setTicketPrice() {
     } else {
         this->ticketPrice = ticketPrice;
     }
-    return ticketPrice;
 }
 
 
