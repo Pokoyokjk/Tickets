@@ -30,16 +30,16 @@ public:
     void setSeat(int seat);
     void setPerson(string person);
 
-    int getTicketID() const;
-    string getConcertGroup() const;
-    int getTicketPrice() const;
-    string getTimeHour() const;
-    string getTicketColor() const;
-    string getTicketStatus() const;
-    int getSeat() const;
-    string getPerson() const;
+    int getTicketID();
+    string getConcertGroup();
+    int getTicketPrice();
+    string getTimeHour();
+    string getTicketColor();
+    string getTicketStatus();
+    int getSeat();
+    string getPerson();
 
-    void printTicket() const;
+    void printTicket();
 
     
 
