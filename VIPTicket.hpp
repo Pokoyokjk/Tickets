@@ -1,7 +1,7 @@
 #ifndef VIPTICKET_HPP
 #define VIPTICKET_HPP
 
-#include "Ticket.hpp"
+#include "Tickets.hpp"
 
 class VIPTicket : public Ticket {
     bool backStagePass;

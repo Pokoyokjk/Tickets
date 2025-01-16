@@ -1,7 +1,7 @@
 #ifndef DISCOUNTTICKET_HPP
 #define DISCOUNTTICKET_HPP
 
-#include "Ticket.hpp"
+#include "Tickets.hpp"
 
 class DiscountTicket : public Ticket {
     string discountType;

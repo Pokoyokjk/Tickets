@@ -1,5 +1,5 @@
 #include <iostream>
-#include "DiscountTicket.h"
+#include "DiscountTicket.hpp"
 
 DiscountTicket::DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person,string discountType, int isDiscounted) : 
 Ticket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person), discountType(discountType), isDiscounted(isDiscounted) {

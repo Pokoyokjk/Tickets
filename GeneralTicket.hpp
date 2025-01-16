@@ -1,7 +1,7 @@
 #ifndef GENERALTICKET_HPP
 #define GENERALTICKET_HPP
 
-#include "Ticket.hpp"
+#include "Tickets.hpp"
 
 // Here, we are calling to the Ticket class to inherit from it
 class GeneralTicket : public Ticket {

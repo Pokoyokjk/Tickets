@@ -1,5 +1,5 @@
 #include <iostream>
-#include "VIPTicket.h"
+#include "VIPTicket.hpp"
 
 VIPTicket::VIPTicket(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink) : 
 Ticket(int ticketID, string concertGroup, string ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person), backStagePass(backStagePass), meetAndGreet(meetAndGreet), foodAndDrink(foodAndDrink) {
