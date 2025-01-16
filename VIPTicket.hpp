@@ -3,7 +3,7 @@
 
 #include "Tickets.hpp"
 
-class VIPTicket : public Ticket {
+class VIPTicket : public Tickets {
     bool backStagePass;
     bool meetAndGreet;
     bool foodAndDrink;

@@ -3,7 +3,7 @@
 
 #include "Tickets.hpp"
 
-class DiscountTicket : public Ticket {
+class DiscountTicket : public Tickets {
     string discountType;
     int isDiscounted;
 

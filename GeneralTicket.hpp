@@ -4,7 +4,7 @@
 #include "Tickets.hpp"
 
 // Here, we are calling to the Ticket class to inherit from it
-class GeneralTicket : public Ticket {
+class GeneralTicket : public Tickets {
     bool withSeat;
 
 public:
