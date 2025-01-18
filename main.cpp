@@ -44,7 +44,7 @@ int main()  {
     gt2.setTimeHour(timeHour);
 
     string ticketColor;
-    cout << "Please enter the ticket color: ";
+    cout << "Please enter the ticket color (Red, Blue, Green, Yellow or Purple): ";
     cin >> ticketColor;
     gt2.setTicketColor(ticketColor);
 
@@ -72,7 +72,7 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink)
     //for a VIP ticket, me setting the values
-    VIPTicket vt1(0, "Extremoduro", 300, "20:00, 12/12/2021", "Pink", 2, "Rodrigo", true, true, true);
+    VIPTicket vt1(0, "Extremoduro", 300, "20:00, 12/12/2021", "Blue", 2, "Rodrigo", true, true, true);
     vt1.setTicketID();
     cout << "The name purchaser's name is: " << vt1.getPerson() << endl;
     cout << "The ticket includes a meet and greet: " << vt1.getMeetAndGreet() << endl;
@@ -95,7 +95,7 @@ int main()  {
     getline(cin >> ws, timeHour);
     vt2.setTimeHour(timeHour);
 
-    cout << "Please enter the ticket color: ";
+    cout << "Please enter the ticket color (Red, Blue, Green, Yellow or Purple): ";
     cin >> ticketColor;
     vt2.setTicketColor(ticketColor);
 
@@ -126,7 +126,7 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, string discountType, int isDiscounted, int finalPrice)
     //for a Discount ticket, me setting the values
-    DiscountTicket dt1(0, "Extremoduro", 200, "20:00, 12/12/2021", "Blue", 6, "Gloria", "Student", 0, 0);
+    DiscountTicket dt1(0, "Extremoduro", 200, "20:00, 12/12/2021", "Yellow", 6, "Gloria", "Student", 0, 0);
     dt1.setTicketID();
     dt1.setIsDiscounted();
     dt1.setFinalPrice();
@@ -153,7 +153,7 @@ int main()  {
     getline(cin >> ws, timeHour);
     dt2.setTimeHour(timeHour);
 
-    cout << "Please enter the ticket color: ";
+    cout << "Please enter the ticket color (Red, Blue, Green, Yellow or Purple): ";
     cin >> ticketColor;
     dt2.setTicketColor(ticketColor);
 

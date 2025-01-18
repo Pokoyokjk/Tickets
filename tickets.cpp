@@ -40,8 +40,14 @@ string Tickets::getTimeHour() {
 }
 
 void Tickets::setTicketColor(string ticketColor) {
+    while (ticketColor != "Red" && ticketColor != "Blue" && ticketColor != "Green" && ticketColor != "Yellow" && ticketColor != "Purple") {
+    cout << "Invalid color" << endl;
+    cout << "Please enter a valid color: ";
+    cin >> ticketColor;
+    }
     this->ticketColor = ticketColor;
 }
+
 
 string Tickets::getTicketColor() {
     return ticketColor;
