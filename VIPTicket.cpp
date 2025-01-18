@@ -28,3 +28,17 @@ void VIPTicket::setMeetAndGreet(bool meetAndGreet) {
 void VIPTicket::setFoodAndDrink(bool foodAndDrink) {
     this->foodAndDrink = foodAndDrink;
 }
+
+void VIPTicket::printTicket() {
+    cout << "Ticket ID: " << ticketID << endl;
+    cout << "Concert Group: " << concertGroup << endl;
+    cout << "Ticket Price: " << ticketPrice << endl;
+    cout << "Time Hour: " << timeHour << endl;
+    cout << "Ticket Color: " << ticketColor << endl;
+    cout << "Ticket Status: " << ticketStatus << endl;
+    cout << "Seat: " << seat << endl;
+    cout << "Person: " << person << endl;
+    cout << "Back Stage Pass: " << backStagePass << endl;
+    cout << "Meet And Greet: " << meetAndGreet << endl;
+    cout << "Food And Drink: " << foodAndDrink << endl;
+}

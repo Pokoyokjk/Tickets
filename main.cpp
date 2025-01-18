@@ -11,7 +11,7 @@ int main()  {
 
 
     cout << "-----------------" << endl;
-    // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat)
+    // (int ticketID, string concertGroup, int ticketPrice, string timeDate, string ticketColor, string ticketStatus, int seat, string person, bool withSeat)
     //for a General ticket, me setting the values
     GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", "Available", 1, "Gloria", true);
     gt1.setTicketID();
@@ -38,7 +38,7 @@ int main()  {
     gt2.setTicketPrice(ticketPrice);
 
     string timeHour;
-    cout << "Please enter the time and day of the concert: ";
+    cout << "Please enter the time and date of the concert: ";
     getline(cin >> ws, timeHour);
     gt2.setTimeHour(timeHour);
 
@@ -78,16 +78,54 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, 
     // int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink)
     //for a VIP ticket, me setting the values
-    VIPTicket vt1(00222, "Extremoduro", 200, "20:00, 12/12/2021", "Pink", "Available", 1, "Rodrigo", true, true, true);
+    VIPTicket vt1(0, "Extremoduro", 200, "20:00, 12/12/2021", "Pink", "Available", 1, "Rodrigo", true, true, true);
+    vt1.setTicketID();
     cout << "The name purchaser's name is: " << vt1.getPerson() << endl;
 
     //now lets create another VIP ticket in which we ask in the command line to set some values
     cout << "-----------------" << endl;
     VIPTicket vt2 (0, "", 0, "", "", "", 0, "", false, false, false);
-    int ticketID;
-    cout << "Please enter the ticket ID: ";
-    cin >> ticketID;
     vt2.setTicketID();
+    cout << "Please enter the concert group: ";
+    getline(cin >> ws, concertGroup);
+    vt2.setConcertGroup(concertGroup);
+
+    cout << "Please enter the ticket price: ";
+    cin >> ticketPrice;
+    vt2.setTicketPrice(ticketPrice);
+
+    cout << "Please enter the time and date of the concert: ";
+    getline(cin >> ws, timeHour);
+    vt2.setTimeHour(timeHour);
+
+    cout << "Please enter the ticket color: ";
+    cin >> ticketColor;
+    vt2.setTicketColor(ticketColor);
+
+    cout << "Please enter the ticket status (available, not available): ";
+    cin >> ticketStatus;
+    vt2.setTicketStatus(ticketStatus);
+
+    cout << "Please enter the tickets's purchaser: ";
+    getline(cin >> ws, person);
+    vt2.setPerson(person);
+
+    cout << "Please enter if the ticket includes backstage Pass (1 for yes, 0 for no): ";
+    bool backStagePass;
+    cin >> backStagePass;
+    vt2.setBackStagePass(backStagePass);
+
+    cout << "Please enter if the ticket includes meet and greet (1 for yes, 0 for no): ";
+    bool meetAndGreet;
+    cin >> meetAndGreet;
+    vt2.setMeetAndGreet(meetAndGreet);
+
+    cout << "Please enter if the ticket includes food and drink (1 for yes, 0 for no): ";
+    bool foodAndDrink;
+    cin >> foodAndDrink;
+    vt2.setFoodAndDrink(foodAndDrink);
+
+    vt2.printTicket();
 
 }
 

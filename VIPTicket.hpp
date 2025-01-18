@@ -18,6 +18,10 @@ public:
     bool getBackStagePass();
     bool getMeetAndGreet();
     bool getFoodAndDrink();
+
+    // we want to override the printTicket function from the Tickets class
+    // so that it prints the extra information that is specific to the VIP ticket
+    void printTicket();
 };
 
 #endif // VIPTICKET_HPP

@@ -75,7 +75,7 @@ void Tickets::printTicket() {
     cout << "Ticket ID: " << ticketID << endl;
     cout << "Concert Group: " << concertGroup << endl;
     cout << "Ticket Price: " << ticketPrice << endl;
-    cout << "Time Hour: " << timeHour << endl;
+    cout << "Time and Date: " << timeHour << endl;
     cout << "Ticket Color: " << ticketColor << endl;
     cout << "Ticket Status: " << ticketStatus << endl;
     cout << "Seat: " << seat << endl;
