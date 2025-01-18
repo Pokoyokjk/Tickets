@@ -15,7 +15,7 @@ int main()  {
     //for a General ticket, me setting the values
     GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", 0, "Gloria", true);
     gt1.setTicketID();
-    g1.setSeat();
+    gt1.setSeat();
 
     cout << "The name of the band is: " << gt1.getConcertGroup() << endl;
     cout << "The ticket includes a seat: " << gt1.getWithSeat() << endl;
