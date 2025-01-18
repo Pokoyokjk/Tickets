@@ -3,9 +3,6 @@
 
 DiscountTicket::DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person,string discountType, int isDiscounted, int finalPrice) : 
 Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, seat, person), discountType(discountType), isDiscounted(isDiscounted), finalPrice(finalPrice) {
-    setDiscountType(discountType);
-    setIsDiscounted();
-    finalPrice();
 }
 
 string DiscountTicket::getDiscountType() {
