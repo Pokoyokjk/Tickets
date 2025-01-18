@@ -18,6 +18,7 @@ public:
     void setIsDiscounted();
 
     void setFinalPrice();
+    int getFinalPrice();
     void printTicket();
 
 
