@@ -40,6 +40,10 @@ void DiscountTicket::setFinalPrice() {
     }
 }
 
+int DiscountTicket::getFinalPrice() {
+    return finalPrice;
+}
+
 void DiscountTicket::printTicket() {
     cout << "Ticket ID: " << ticketID << endl;
     cout << "Concert Group: " << concertGroup << endl;
