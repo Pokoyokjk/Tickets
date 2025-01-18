@@ -5,6 +5,7 @@ Tickets::Tickets(int ticketID, string concertGroup, int ticketPrice, string time
     ticketID(ticketID), concertGroup(concertGroup), ticketPrice(ticketPrice), timeHour(timeHour), ticketColor(ticketColor), ticketStatus(ticketStatus), seat(seat), person(person) {
     }
 
+// this method will just give a ticket ID to the ticket, it will be like a couter. The first ID=1, the second ID=2, and so on.
 void Tickets::setTicketID(int ticketID) {
     this->ticketID = ticketID;
 }
