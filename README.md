@@ -15,4 +15,4 @@ Use printTicket() to display ticket details.
  
  gt1.setSeat();
  
- gTicket.printTicket();
+ gt1.printTicket();
