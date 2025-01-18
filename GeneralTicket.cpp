@@ -9,8 +9,12 @@ Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, ticketStatus
 }
 
 
-bool GeneralTicket::getWithSeat() {
-    return withSeat;
+string GeneralTicket::getWithSeat() {
+    if (withSeat) {
+        return "Yes";
+    } else {
+        return "No";
+    }
 }
 
 void GeneralTicket::setWithSeat(bool withSeat) {
