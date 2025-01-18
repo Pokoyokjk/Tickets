@@ -9,7 +9,7 @@ class GeneralTicket : public Tickets {
 
 public:
     // Constructor
-    GeneralTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat);
+    GeneralTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, bool withSeat);
 
     string getWithSeat();
     void setWithSeat(bool withSeat);

@@ -1,8 +1,8 @@
 #include "Tickets.hpp"
 
 // this will be used to create a ticket object
-Tickets::Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person) :
-    ticketID(ticketID), concertGroup(concertGroup), ticketPrice(ticketPrice), timeHour(timeHour), ticketColor(ticketColor), ticketStatus(ticketStatus), seat(seat), person(person) {
+Tickets::Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person) :
+    ticketID(ticketID), concertGroup(concertGroup), ticketPrice(ticketPrice), timeHour(timeHour), ticketColor(ticketColor), seat(seat), person(person) {
     }
 
 // this method will just give a ticket ID to the ticket, it will be like a couter. The first ID=1, the second ID=2, and so on.
@@ -47,13 +47,6 @@ string Tickets::getTicketColor() {
     return ticketColor;
 }
 
-void Tickets::setTicketStatus(string ticketStatus) {
-    this->ticketStatus = ticketStatus;
-}
-
-string Tickets::getTicketStatus() {
-    return ticketStatus;
-}
 
 void Tickets::setSeat(int seat) {
     this->seat = seat;
@@ -77,7 +70,6 @@ void Tickets::printTicket() {
     cout << "Ticket Price: " << ticketPrice << endl;
     cout << "Time and Date: " << timeHour << endl;
     cout << "Ticket Color: " << ticketColor << endl;
-    cout << "Ticket Status: " << ticketStatus << endl;
     cout << "Seat: " << seat << endl;
     cout << "Person: " << person << endl;
 }

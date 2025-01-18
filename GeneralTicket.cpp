@@ -4,8 +4,8 @@
 
 
 
-GeneralTicket::GeneralTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat):
-Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, ticketStatus, seat, person), withSeat(withSeat) {
+GeneralTicket::GeneralTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, bool withSeat):
+Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, seat, person), withSeat(withSeat) {
 }
 
 

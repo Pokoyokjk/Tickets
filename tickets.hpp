@@ -15,18 +15,16 @@ protected:
     int ticketPrice;
     string timeHour;
     string ticketColor;
-    string ticketStatus;
     int seat;
     string person;
 public:
-    Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person);
+    Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person);
 
     void setTicketID();
     void setConcertGroup(string concertGroup);
     void setTicketPrice(int ticketPrice);
     void setTimeHour(string timeHour);
     void setTicketColor(string ticketColor);
-    void setTicketStatus(string ticketStatus);
     void setSeat(int seat);
     void setPerson(string person);
 
@@ -35,7 +33,6 @@ public:
     int getTicketPrice();
     string getTimeHour();
     string getTicketColor();
-    string getTicketStatus();
     int getSeat();
     string getPerson();
 

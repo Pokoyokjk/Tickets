@@ -1,20 +1,32 @@
 #include <iostream>
 #include "VIPTicket.hpp"
 
-VIPTicket::VIPTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink) : 
-Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, ticketStatus, seat, person), backStagePass(backStagePass), meetAndGreet(meetAndGreet), foodAndDrink(foodAndDrink) {
+VIPTicket::VIPTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink) : 
+Tickets(ticketID, concertGroup, ticketPrice, timeHour, ticketColor, seat, person), backStagePass(backStagePass), meetAndGreet(meetAndGreet), foodAndDrink(foodAndDrink) {
 }
 
-bool VIPTicket::getBackStagePass() {
-    return backStagePass;
+string VIPTicket::getBackStagePass() {
+    if (backStagePass) {
+        return "Yes";
+    } else {
+        return "No";
+    }
 }
 
-bool VIPTicket::getMeetAndGreet() {
-    return meetAndGreet;
+string VIPTicket::getMeetAndGreet() {
+    if (meetAndGreet) {
+        return "Yes";
+    } else {
+        return "No";
+    }
 }
 
-bool VIPTicket::getFoodAndDrink() {
-    return foodAndDrink;
+string VIPTicket::getFoodAndDrink() {
+    if (foodAndDrink) {
+        return "Yes";
+    } else {
+        return "No";
+    }
 }
 
 void VIPTicket::setBackStagePass(bool backStagePass) {
@@ -35,7 +47,6 @@ void VIPTicket::printTicket() {
     cout << "Ticket Price: " << ticketPrice << endl;
     cout << "Time Hour: " << timeHour << endl;
     cout << "Ticket Color: " << ticketColor << endl;
-    cout << "Ticket Status: " << ticketStatus << endl;
     cout << "Seat: " << seat << endl;
     cout << "Person: " << person << endl;
     cout << "Back Stage Pass: " << backStagePass << endl;

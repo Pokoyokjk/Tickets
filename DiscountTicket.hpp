@@ -8,7 +8,7 @@ class DiscountTicket : public Tickets {
     int isDiscounted;
 
 public:
-    DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, string discountType, int isDiscounted);
+    DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, string discountType, int isDiscounted, int finalPrice);
 
     string getDiscountType();
     void setDiscountType(string discountType);
@@ -16,7 +16,8 @@ public:
     int getIsDiscounted();
     void setIsDiscounted();
 
-    void setTicketPrice();
+    void SetFinalPrice();
+    void printTicket();
 
 
 };

@@ -9,15 +9,15 @@ class VIPTicket : public Tickets {
     bool foodAndDrink;
 
 public:
-    VIPTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink);
+    VIPTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink);
 
     void setBackStagePass(bool backStagePass);
     void setMeetAndGreet(bool meetAndGreet);
     void setFoodAndDrink(bool foodAndDrink);
 
-    bool getBackStagePass();
-    bool getMeetAndGreet();
-    bool getFoodAndDrink();
+    string getBackStagePass();
+    string getMeetAndGreet();
+    string getFoodAndDrink();
 
     // we want to override the printTicket function from the Tickets class
     // so that it prints the extra information that is specific to the VIP ticket
