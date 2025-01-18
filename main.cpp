@@ -87,7 +87,7 @@ int main()  {
     int ticketID;
     cout << "Please enter the ticket ID: ";
     cin >> ticketID;
-    vt2.setTicketID(ticketID);
+    vt2.setTicketID();
 
 }
 
