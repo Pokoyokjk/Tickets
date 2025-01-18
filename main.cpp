@@ -9,16 +9,12 @@ using namespace std;
 
 int main()  {
 
-    //creating an array of ticket IDs
-    int i = 0;
 
     cout << "-----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat)
     //for a General ticket, me setting the values
     GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", "Available", 1, "Gloria", true);
     gt1.setTicketID(i);
-    // Changing the ticket ID for the next ticket
-    i++;
 
     cout << "The name of the band is: " << gt1.getConcertGroup() << endl;
     cout << "The ticket includes a seat: " << gt1.getWithSeat() << endl;
@@ -30,7 +26,6 @@ int main()  {
     GeneralTicket gt2 (0, "", 0, "", "", "", 0, "", false);
     
     gt2.setTicketID(i);
-    i++;
 
     string concertGroup;
     cout << "Please enter the concert group: ";
