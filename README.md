@@ -2,7 +2,9 @@ This project is an Object-Oriented implementation of a Ticket Management System 
 
 # How to Use
 Include the header files (Tickets.hpp, GeneralTicket.hpp, etc.).
+
 Instantiate objects for each ticket type, providing appropriate attributes.
+
 Use printTicket() to display ticket details.
 
 
