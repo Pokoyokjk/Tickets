@@ -49,7 +49,22 @@ void VIPTicket::printTicket() {
     cout << "Ticket Color: " << ticketColor << endl;
     cout << "Seat: " << seat << endl;
     cout << "Person: " << person << endl;
-    cout << "Back Stage Pass: " << backStagePass << endl;
-    cout << "Meet And Greet: " << meetAndGreet << endl;
-    cout << "Food And Drink: " << foodAndDrink << endl;
+
+    if (backStagePass) {
+        cout << "Back Stage Pass: Yes" << endl;
+    } else {
+        cout << "Back Stage Pass: No" << endl;
+    }
+    
+    if (meetAndGreet) {
+        cout << "Meet And Greet: Yes" << endl;
+    } else {
+        cout << "Meet And Greet: No" << endl;
+    }
+
+    if (foodAndDrink) {
+        cout << "Food And Drink: Yes" << endl;
+    } else {
+        cout << "Food And Drink: No" << endl;
+    }
 }
