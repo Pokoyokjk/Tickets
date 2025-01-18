@@ -14,7 +14,7 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person, bool withSeat)
     //for a General ticket, me setting the values
     GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", "Available", 1, "Gloria", true);
-    gt1.setTicketID(i);
+    gt1.setTicketID();
 
     cout << "The name of the band is: " << gt1.getConcertGroup() << endl;
     cout << "The ticket includes a seat: " << gt1.getWithSeat() << endl;
@@ -25,7 +25,7 @@ int main()  {
     cout << "-----------------" << endl;
     GeneralTicket gt2 (0, "", 0, "", "", "", 0, "", false);
     
-    gt2.setTicketID(i);
+    gt2.setTicketID();
 
     string concertGroup;
     cout << "Please enter the concert group: ";
@@ -71,7 +71,7 @@ int main()  {
 
     gt2.printTicket();
 
-}
+
 
 // Let's create a VIP ticket
     cout << "-----------------" << endl;
@@ -88,3 +88,7 @@ int main()  {
     cout << "Please enter the ticket ID: ";
     cin >> ticketID;
     vt2.setTicketID(ticketID);
+
+}
+
+

@@ -21,7 +21,7 @@ protected:
 public:
     Tickets(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, string ticketStatus, int seat, string person);
 
-    void setTicketID(int ticketID);
+    void setTicketID();
     void setConcertGroup(string concertGroup);
     void setTicketPrice(int ticketPrice);
     void setTimeHour(string timeHour);
