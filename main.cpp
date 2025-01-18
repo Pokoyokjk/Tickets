@@ -62,7 +62,7 @@ int main()  {
     cin >> withSeat;
     gt2.setWithSeat(withSeat);
 
-    if (gt2.getWithSeat() == 1) {
+    if (gt2.getWithSeat() == "yes") {
         int seat;
         cout << "Please enter the seat number: ";
         cin >> seat;
