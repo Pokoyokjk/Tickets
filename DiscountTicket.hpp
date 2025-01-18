@@ -6,6 +6,7 @@
 class DiscountTicket : public Tickets {
     string discountType;
     int isDiscounted;
+    int finalPrice;
 
 public:
     DiscountTicket(int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor, int seat, string person, string discountType, int isDiscounted, int finalPrice);
