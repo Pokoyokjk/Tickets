@@ -10,7 +10,7 @@ using namespace std;
 int main()  {
 
 
-    cout << "-----------------" << endl;
+    cout << "----------------- General ticket 1 ----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeDate, string ticketColor, int seat, string person, bool withSeat)
     //for a General ticket, me setting the values
     GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", 0, "Gloria", true);
@@ -23,7 +23,7 @@ int main()  {
 
     
     //now lets create another General ticket in which we ask in the command line to set the values
-    cout << "-----------------" << endl;
+    cout << "----------------- General ticket 2 ----------------" << endl;
     GeneralTicket gt2 (0, "", 0, "", "", 0, "", false);
     
     gt2.setTicketID();
@@ -68,7 +68,7 @@ int main()  {
 
 
 // Let's create a VIP ticket
-    cout << "-----------------" << endl;
+    cout << "----------------- VIP 1 ----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink)
     //for a VIP ticket, me setting the values
@@ -78,7 +78,7 @@ int main()  {
     cout << "The ticket includes a meet and greet: " << vt1.getMeetAndGreet() << endl;
 
     //now lets create another VIP ticket in which we ask in the command line to set some values
-    cout << "-----------------" << endl;
+    cout << "----------------- VIP ticket 2 ----------------" << endl;
     VIPTicket vt2 (0, "", 0, "", "", 0, "", false, false, false);
     vt2.setTicketID();
     cout << "Please enter the concert group: ";
@@ -122,7 +122,7 @@ int main()  {
     vt2.printTicket();
 
 // Let's create a DiscountTicket
-    cout << "-----------------" << endl;
+    cout << "----------------- Discount ticket 1 ----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, string discountType, int isDiscounted, int finalPrice)
     //for a Discount ticket, me setting the values
@@ -135,7 +135,7 @@ int main()  {
     cout << "The final price is: " << dt1.getFinalPrice() << endl;
 
     //now lets create another Discount ticket in which we ask in the command line to set some values
-    cout << "-----------------" << endl;
+    cout << "----------------- Discount ticket 2 ----------------" << endl;
     DiscountTicket dt2 (0, "", 0, "", "", 0, "", "", 0, 0);
     dt2.setTicketID();
 
