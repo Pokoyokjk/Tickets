@@ -48,8 +48,13 @@ string Tickets::getTicketColor() {
 }
 
 
-void Tickets::setSeat(int seat) {
-    this->seat = seat;
+int j =100;
+void Tickets::setSeat() {
+    if (j == 0) {
+        cout << "No more seats available" << endl;
+    }
+    this->seat = j--;
+    
 }
 
 int Tickets::getSeat() {

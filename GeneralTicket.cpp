@@ -17,6 +17,7 @@ string GeneralTicket::getWithSeat() {
     }
 }
 
+
 void GeneralTicket::setWithSeat(bool withSeat) {
     this->withSeat = withSeat;
     if (!withSeat) {

@@ -13,8 +13,9 @@ int main()  {
     cout << "-----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeDate, string ticketColor, int seat, string person, bool withSeat)
     //for a General ticket, me setting the values
-    GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", 1, "Gloria", true);
+    GeneralTicket gt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Red", 0, "Gloria", true);
     gt1.setTicketID();
+    g1.setSeat();
 
     cout << "The name of the band is: " << gt1.getConcertGroup() << endl;
     cout << "The ticket includes a seat: " << gt1.getWithSeat() << endl;
@@ -59,10 +60,7 @@ int main()  {
 
 
     if (gt2.getWithSeat() == "Yes") {
-        int seat;
-        cout << "Please enter the seat number: ";
-        cin >> seat;
-        gt2.setSeat(seat);
+        gt2.setSeat();
     }
 
     gt2.printTicket();
@@ -74,7 +72,7 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, bool backStagePass, bool meetAndGreet, bool foodAndDrink)
     //for a VIP ticket, me setting the values
-    VIPTicket vt1(0, "Extremoduro", 200, "20:00, 12/12/2021", "Pink", 1, "Rodrigo", true, true, true);
+    VIPTicket vt1(0, "Extremoduro", 300, "20:00, 12/12/2021", "Pink", 2, "Rodrigo", true, true, true);
     vt1.setTicketID();
     cout << "The name purchaser's name is: " << vt1.getPerson() << endl;
     cout << "The ticket includes a meet and greet: " << vt1.getMeetAndGreet() << endl;
@@ -86,6 +84,8 @@ int main()  {
     cout << "Please enter the concert group: ";
     getline(cin >> ws, concertGroup);
     vt2.setConcertGroup(concertGroup);
+
+    vt2.setSeat();
 
     cout << "Please enter the ticket price: ";
     cin >> ticketPrice;
@@ -126,7 +126,7 @@ int main()  {
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
     // int seat, string person, string discountType, int isDiscounted, int finalPrice)
     //for a Discount ticket, me setting the values
-    DiscountTicket dt1(0, "Extremoduro", 100, "20:00, 12/12/2021", "Blue", 1, "Gloria", "Student", 0, 0);
+    DiscountTicket dt1(0, "Extremoduro", 200, "20:00, 12/12/2021", "Blue", 6, "Gloria", "Student", 0, 0);
     dt1.setTicketID();
     dt1.setIsDiscounted();
     dt1.setFinalPrice();
@@ -142,6 +142,8 @@ int main()  {
     cout << "Please enter the concert group: ";
     getline(cin >> ws, concertGroup);
     dt2.setConcertGroup(concertGroup);
+
+    dt2.setSeat();
 
     cout << "Please enter the ticket price: ";
     cin >> ticketPrice;
@@ -159,7 +161,7 @@ int main()  {
     getline(cin >> ws, person);
     dt2.setPerson(person);
 
-    cout << "Please enter the discount type: ";
+    cout << "Please enter the discount type (Big family, Student or Handicapped): ";
     string discountType;
     getline(cin >> ws, discountType);
     dt2.setDiscountType(discountType);

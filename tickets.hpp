@@ -25,7 +25,7 @@ public:
     void setTicketPrice(int ticketPrice);
     void setTimeHour(string timeHour);
     void setTicketColor(string ticketColor);
-    void setSeat(int seat);
+    void setSeat();
     void setPerson(string person);
 
     int getTicketID();

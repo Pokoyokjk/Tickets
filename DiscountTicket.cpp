@@ -22,7 +22,7 @@ void DiscountTicket::setIsDiscounted() {
         this->isDiscounted = 40;
     } else if (discountType == "Student") {
         this->isDiscounted = 30;
-    } else if (discountType == "Handycapped") {
+    } else if (discountType == "Handicapped") {
         this->isDiscounted = 60;
     } else {
         this->isDiscounted = 0;
