@@ -1,4 +1,4 @@
-//make file for the project
+#make file for the project
 
 all: main.o Tickets.o GeneralTicket.o VIPTicket.o DiscountTicket.o 
 	g++ main.o Tickets.o GeneralTicket.o VIPTicket.o DiscountTicket.o -o main
