@@ -190,11 +190,11 @@ ticketsList.push_back(dt1);
 ticketsList.push_back(dt2);
 
 
-    return 0;
 // and then we can print all the tickets with a for loop
 for (int i = 0; i < ticketsList.size(); i++) {
     ticketsList[i].printTicket();
 }
+    return 0;
 }
 
 
