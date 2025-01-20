@@ -1,18 +1,20 @@
 #include <iostream>
 #include <string>
+#include <vector>
+
 
 #include "GeneralTicket.hpp"
 #include "VIPTicket.hpp"
 #include "DiscountTicket.hpp"
+
 
 using namespace std;
 
 int main()  {
 
 // every time a ticket is created it should be kept in an array:
-GeneralTicket generalTickets[10];
-VIPTicket vipTickets[10];
-DiscountTicket discountTickets[10];
+std::vector<Tickets> Tickets;
+
 
 
     cout << "----------------- General ticket 1 ----------------" << endl;
