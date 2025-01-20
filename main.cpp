@@ -189,6 +189,7 @@ ticketsList.push_back(vt2);
 ticketsList.push_back(dt1);
 ticketsList.push_back(dt2);
 
+cout << "-----------------------------------" << endl;
 
 // and then we can print all the tickets with a for loop
 for (int i = 0; i < ticketsList.size(); i++) {
