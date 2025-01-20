@@ -192,7 +192,7 @@ ticketsList.push_back(dt2);
 
     return 0;
 // and then we can print all the tickets with a for loop
-for (const auto& ticket : ticketsList) {
+for (ticket : ticketsList) {
     ticket.printTicket();
 }
 }
