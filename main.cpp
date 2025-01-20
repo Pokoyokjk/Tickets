@@ -9,6 +9,11 @@ using namespace std;
 
 int main()  {
 
+// every time a ticket is created it should be kept in an array:
+GeneralTicket generalTickets[10];
+VIPTicket vipTickets[10];
+DiscountTicket discountTickets[10];
+
 
     cout << "----------------- General ticket 1 ----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeDate, string ticketColor, int seat, string person, bool withSeat)
@@ -65,6 +70,9 @@ int main()  {
 
     gt2.printTicket();
 
+// lets save the tickets in the array
+generalTickets[0] = gt1;
+generalTickets[1] = gt2;
 
 
 // Let's create a VIP ticket
@@ -121,6 +129,10 @@ int main()  {
 
     vt2.printTicket();
 
+// lets save the tickets in the array
+vipTickets[0] = vt1;
+vipTickets[1] = vt2;
+
 // Let's create a DiscountTicket
     cout << "----------------- Discount ticket 1 ----------------" << endl;
     // (int ticketID, string concertGroup, int ticketPrice, string timeHour, string ticketColor,
@@ -171,4 +183,20 @@ int main()  {
 
     dt2.printTicket();
 
+// // lets save the tickets in the array
+discountTickets[0] = dt1;
+discountTickets[1] = dt2;
+
+    return 0;
+// and then we can print all the tickets with a for loop
+for (int i = 0; i < 10; i++) {
+     generalTickets[i].printTicket();
+    vipTickets[i].printTicket();
+    discountTickets[i].printTicket();
 }
+
+}
+
+
+
+
