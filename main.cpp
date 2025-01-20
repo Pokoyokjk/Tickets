@@ -193,6 +193,7 @@ ticketsList.push_back(dt2);
 // and then we can print all the tickets with a for loop
 for (int i = 0; i < ticketsList.size(); i++) {
     ticketsList[i].printTicket();
+    cout << "-----------------------------------" << endl;
 }
     return 0;
 }
