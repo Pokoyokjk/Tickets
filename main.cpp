@@ -13,7 +13,7 @@ using namespace std;
 int main()  {
 
 // every time a ticket is created it should be kept in an array:
-std::vector<Tickets> Tickets;
+std::vector<Tickets> ticketsList;
 
 
 
@@ -73,8 +73,8 @@ std::vector<Tickets> Tickets;
     gt2.printTicket();
 
 // lets save the tickets in the array
-generalTickets[0] = gt1;
-generalTickets[1] = gt2;
+ticketsList.push_back(gt1);
+ticketsList.push_back(gt2);
 
 
 // Let's create a VIP ticket
@@ -132,8 +132,8 @@ generalTickets[1] = gt2;
     vt2.printTicket();
 
 // lets save the tickets in the array
-vipTickets[0] = vt1;
-vipTickets[1] = vt2;
+ticketsList.push_back(vt1);
+ticketsList.push_back(vt2);
 
 // Let's create a DiscountTicket
     cout << "----------------- Discount ticket 1 ----------------" << endl;
@@ -186,17 +186,14 @@ vipTickets[1] = vt2;
     dt2.printTicket();
 
 // // lets save the tickets in the array
-discountTickets[0] = dt1;
-discountTickets[1] = dt2;
+ticketsList.push_back(dt1);
+ticketsList.push_back(dt2);
+
 
     return 0;
 // and then we can print all the tickets with a for loop
-for (int i = 0; i < 10; i++) {
-     generalTickets[i].printTicket();
-    vipTickets[i].printTicket();
-    discountTickets[i].printTicket();
-}
-
+for (int i = 0; i < ticketsList.size(); i++) {
+    ticketsList[i].printTicket();
 }
 
 
